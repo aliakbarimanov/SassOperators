@@ -1,0 +1,194 @@
+@font-face {
+  font-family: "Frutiger";
+  src: url(../fonts/Frutiger-Normal.ttf);
+}
+@font-face {
+  font-family: "Luxury";
+  src: url(../fonts/Luxury-Gold.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Frutiger", sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  background-color: #669999;
+  border-bottom: 1px solid #CF649A;
+}
+
+.hero {
+  position: relative;
+}
+.hero .container {
+  height: 100%;
+}
+.hero .container .row {
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 0 200px;
+}
+.hero .container .row .owner {
+  font-size: 70px;
+  font-family: "Luxury", sans-serif;
+  letter-spacing: 2px;
+  color: #fff;
+}
+.hero .container .row .subject {
+  font-size: 30px;
+  letter-spacing: 1px;
+  color: #fff;
+}
+.hero .container .row .subject span {
+  color: #CF649A;
+}
+.hero .container .row .sassLogo {
+  position: absolute;
+  top: 15%;
+  right: 15%;
+  width: 250px;
+  height: 250px;
+}
+.hero .container .row .sassLogo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.types .container {
+  height: 100%;
+}
+.types .container .row {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 200px;
+}
+.types .container .row .operatorsList .operatorsItem {
+  font-size: 35px;
+  margin-bottom: 20px;
+  color: #CF649A;
+}
+.types .container .row .operatorsList .operatorsItem span {
+  color: #fff;
+}
+
+.mathematical .container {
+  height: 100%;
+}
+.mathematical .container .row {
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 50px 200px;
+  gap: 30px;
+}
+.mathematical .container .row .title {
+  font-size: 40px;
+  color: #CF649A;
+  font-family: "Luxury", sans-serif;
+  letter-spacing: 2px;
+}
+.mathematical .container .row .mathematicalList {
+  display: flex;
+  gap: 40px;
+}
+.mathematical .container .row .mathematicalList .mathematicalItem {
+  font-weight: 700;
+  font-size: 30px;
+  color: #fff;
+}
+.mathematical .container .row .desc {
+  font-size: 30px;
+  letter-spacing: 1.5px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.equality .container {
+  height: 100%;
+}
+.equality .container .row {
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 50px 200px;
+  gap: 30px;
+}
+.equality .container .row .title {
+  font-size: 40px;
+  color: #CF649A;
+  font-family: "Luxury", sans-serif;
+  letter-spacing: 2px;
+}
+.equality .container .row .equalityList {
+  display: flex;
+  gap: 40px;
+}
+.equality .container .row .equalityList .equalityItem {
+  font-weight: 700;
+  font-size: 30px;
+  color: #fff;
+  letter-spacing: 2px;
+}
+.equality .container .row .desc {
+  font-size: 30px;
+  letter-spacing: 1.5px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.boolean .container {
+  height: 100%;
+}
+.boolean .container .row {
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 50px 200px;
+  gap: 30px;
+}
+.boolean .container .row .title {
+  font-size: 40px;
+  color: #CF649A;
+  font-family: "Luxury", sans-serif;
+  letter-spacing: 2px;
+}
+.boolean .container .row .booleanList {
+  display: flex;
+  gap: 40px;
+}
+.boolean .container .row .booleanList .booleanItem {
+  font-weight: 700;
+  font-size: 30px;
+  color: #fff;
+  letter-spacing: 2px;
+}
+.boolean .container .row .desc {
+  font-size: 30px;
+  letter-spacing: 1.5px;
+  font-size: 20px;
+  color: #fff;
+}

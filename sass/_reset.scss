@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "Frutiger";
+  src: url(../fonts/Frutiger-Normal.ttf);
+}
+
+@font-face {
+  font-family: "Luxury";
+  src: url(../fonts/Luxury-Gold.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Frutiger", sans-serif;
+}

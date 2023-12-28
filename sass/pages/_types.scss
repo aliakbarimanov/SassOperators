@@ -1,0 +1,26 @@
+.types{
+    .container{
+        height: 100%;
+
+        .row{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 0 200px;
+
+            .operatorsList{
+                .operatorsItem{
+                    font-size: 35px;
+                    margin-bottom: 20px;
+                    color: $primary;
+
+                    span{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
