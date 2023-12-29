@@ -1,4 +1,4 @@
-.equality {
+.comparison {
     .container {
         height: 100%;
 
@@ -18,12 +18,12 @@
                 margin-bottom: 20px;
             }
 
-            .equalityList {
+            .comparisonList {
                 display: flex;
                 gap: 40px;
                 margin-bottom: 20px;
 
-                .equalityItem {
+                .comparisonItem {
                     font-weight: 700;
                     font-size: 30px;
                     color: #fff;
@@ -42,6 +42,16 @@
             p{
                 color: #fff;
                 font-size: 20px;
+
+                span{
+                    color: $primary;
+                }
+            }
+
+            pre{
+                color: #fff;
+                font-size: 20px;
+                line-height: 150%;
 
                 span{
                     color: $primary;

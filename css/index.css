@@ -15,6 +15,10 @@
   font-family: "Frutiger", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   width: 90%;
   margin: 0 auto;
@@ -33,6 +37,7 @@ section {
 
 .hero {
   position: relative;
+  animation: animate 2s;
 }
 .hero .container {
   height: 100%;
@@ -101,17 +106,19 @@ section {
   justify-content: flex-start;
   align-items: flex-start;
   padding: 50px 200px;
-  gap: 30px;
+  gap: 10px;
 }
 .mathematical .container .row .title {
   font-size: 40px;
   color: #CF649A;
   font-family: "Luxury", sans-serif;
   letter-spacing: 2px;
+  margin-bottom: 20px;
 }
 .mathematical .container .row .mathematicalList {
   display: flex;
   gap: 40px;
+  margin-bottom: 20px;
 }
 .mathematical .container .row .mathematicalList .mathematicalItem {
   font-weight: 700;
@@ -123,6 +130,15 @@ section {
   letter-spacing: 1.5px;
   font-size: 20px;
   color: #fff;
+  margin-bottom: 20px;
+}
+.mathematical .container .row p {
+  color: #fff;
+  font-size: 20px;
+}
+.mathematical .container .row p span {
+  color: #CF649A;
+  font-style: italic;
 }
 
 .equality .container {
@@ -134,17 +150,19 @@ section {
   justify-content: flex-start;
   align-items: flex-start;
   padding: 50px 200px;
-  gap: 30px;
+  gap: 10px;
 }
 .equality .container .row .title {
   font-size: 40px;
   color: #CF649A;
   font-family: "Luxury", sans-serif;
   letter-spacing: 2px;
+  margin-bottom: 20px;
 }
 .equality .container .row .equalityList {
   display: flex;
   gap: 40px;
+  margin-bottom: 20px;
 }
 .equality .container .row .equalityList .equalityItem {
   font-weight: 700;
@@ -157,38 +175,158 @@ section {
   letter-spacing: 1.5px;
   font-size: 20px;
   color: #fff;
+  margin-bottom: 20px;
+}
+.equality .container .row p {
+  color: #fff;
+  font-size: 20px;
+}
+.equality .container .row p span {
+  color: #CF649A;
+  font-style: italic;
 }
 
-.boolean .container {
+.logical .container {
   height: 100%;
 }
-.boolean .container .row {
+.logical .container .row {
   height: 100%;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   padding: 50px 200px;
-  gap: 30px;
+  gap: 10px;
 }
-.boolean .container .row .title {
+.logical .container .row .title {
   font-size: 40px;
   color: #CF649A;
   font-family: "Luxury", sans-serif;
   letter-spacing: 2px;
+  margin-bottom: 20px;
 }
-.boolean .container .row .booleanList {
+.logical .container .row .logicalList {
   display: flex;
   gap: 40px;
+  margin-bottom: 20px;
 }
-.boolean .container .row .booleanList .booleanItem {
+.logical .container .row .logicalList .logicalItem {
   font-weight: 700;
   font-size: 30px;
   color: #fff;
   letter-spacing: 2px;
 }
-.boolean .container .row .desc {
+.logical .container .row .desc {
   font-size: 30px;
   letter-spacing: 1.5px;
   font-size: 20px;
   color: #fff;
+  margin-bottom: 20px;
+}
+.logical .container .row .desc span {
+  color: #CF649A;
+}
+.logical .container .row p {
+  color: #fff;
+  font-size: 20px;
+}
+.logical .container .row p span {
+  color: #CF649A;
+  font-style: italic;
+}
+
+.comparison .container {
+  height: 100%;
+}
+.comparison .container .row {
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 50px 200px;
+  gap: 10px;
+}
+.comparison .container .row .title {
+  font-size: 40px;
+  color: #CF649A;
+  font-family: "Luxury", sans-serif;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+.comparison .container .row .comparisonList {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+.comparison .container .row .comparisonList .comparisonItem {
+  font-weight: 700;
+  font-size: 30px;
+  color: #fff;
+  letter-spacing: 2px;
+}
+.comparison .container .row .desc {
+  font-size: 30px;
+  letter-spacing: 1.5px;
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.comparison .container .row p {
+  color: #fff;
+  font-size: 20px;
+}
+.comparison .container .row p span {
+  color: #CF649A;
+}
+.comparison .container .row pre {
+  color: #fff;
+  font-size: 20px;
+  line-height: 150%;
+}
+.comparison .container .row pre span {
+  color: #CF649A;
+  font-style: italic;
+}
+
+.string .container {
+  height: 100%;
+}
+.string .container .row {
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 50px 200px;
+  gap: 10px;
+}
+.string .container .row .title {
+  font-size: 40px;
+  color: #CF649A;
+  font-family: "Luxury", sans-serif;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+.string .container .row .stringList {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+.string .container .row .stringList .stringItem {
+  font-weight: 700;
+  font-size: 30px;
+  color: #fff;
+}
+.string .container .row .desc {
+  font-size: 30px;
+  letter-spacing: 1.5px;
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.string .container .row pre {
+  color: #fff;
+  font-size: 20px;
+}
+.string .container .row pre span {
+  color: #CF649A;
+  font-style: italic;
 }

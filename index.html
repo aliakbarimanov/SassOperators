@@ -46,6 +46,8 @@
                 </ul>
                 <p class="desc">Mathematical operators are used in recent times for calculating sizes, changing colors,
                     and other functionalities.</p>
+                <p>font-size: $base-size <span>*</span> 5;</p>
+                <p>color: #102030 <span>+</span> #010203;</p>
             </div>
         </div>
     </section>
@@ -59,19 +61,72 @@
                 </ul>
                 <p class="desc">Equality operators are used to check if two values are the same.</p>
                 <p class="desc">Numbers, Strings, Colors, Lists, Maps, Calculations, Functions.</p>
+                <p>@if( $size <span>!=</span> 100% ) { margin: auto; } </p>
+                <p>@if( input[type<span>==</span>text] ) { font-size: $base-font; } </p>
             </div>
         </div>
     </section>
-    <section class="boolean">
+    <section class="logical">
         <div class="container">
             <div class="row">
-                <h3 class="title">Boolean operators</h3>
-                <ul class="booleanList">
-                    <li class="booleanItem">and</li>
-                    <li class="booleanItem">or</li>
-                    <li class="booleanItem">not</li>
+                <h3 class="title">Logical operators</h3>
+                <ul class="logicalList">
+                    <li class="logicalItem">and</li>
+                    <li class="logicalItem">or</li>
+                    <li class="logicalItem">not</li>
                 </ul>
-                <p class="desc">Equality operators are used to check if two values are the same.</p>
+                <pre class="desc">
+<span>not</span> true; => false
+<span>not</span> false; => true
+
+true <span>and</span> true; => true
+true <span>and</span> false; => false
+
+true <span>or</span> false; => true
+false <span>or</span> false; => false
+                </pre>
+                <p>
+                    @if($size > 15 <span>or</span> $size < 25){ font-size:$size }
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="comparison">
+        <div class="container">
+            <div class="row">
+                <h3 class="title">Comparison operators</h3>
+                <ul class="comparisonList">
+                    <li class="comparisonItem">></li>
+                    <li class="comparisonItem">>=</li>
+                    <li class="comparisonItem"><</li>
+                    <li class="comparisonItem"><=</li>
+                </ul>
+                <p class="desc">Check whether two values are greater or less than one another.</p>
+                <pre>
+@if($padding <span><=</span> 20px) {  
+    padding: $padding;  
+} @else {  
+    padding: $padding / 2;  
+}  
+                </pre>
+            </div>
+        </div>
+    </section>
+    <section class="string">
+        <div class="container">
+            <div class="row">
+                <h3 class="title">String operators</h3>
+                <ul class="stringList">
+                    <li class="stringItem">+</li>
+                    <li class="stringItem">-</li>
+                    <li class="stringItem">/</li>
+                </ul>
+                <p class="desc">+ returns a string writing with quotes.
+                <p class="desc">- returns a string writing without quotes.
+                <pre>
+"Ali " + "Imanov" <span>return</span> Ali Imanov
+sans + serif <span>return</span> sans serif</p>
+                </pre>
             </div>
         </div>
     </section>
